@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`k-mst-router should go to edit sceen 1`] = `
+Object {
+  "pushState": Array [
+    Array [
+      null,
+      "edit",
+      "/list/2",
+    ],
+  ],
+  "router": Object {
+    "current": "edit",
+    "params": Object {
+      "id": "2",
+    },
+    "screens": Array [
+      Object {
+        "name": "home",
+        "path": "/",
+      },
+      Object {
+        "name": "list",
+        "path": "/list",
+      },
+      Object {
+        "name": "edit",
+        "path": "/list/:id",
+      },
+    ],
+  },
+}
+`;
+
+exports[`k-mst-router should init with a simple router 1`] = `
+Object {
+  "current": null,
+  "params": null,
+  "screens": Array [
+    Object {
+      "name": "home",
+      "path": "/",
+    },
+  ],
+}
+`;
+
+exports[`k-mst-router should init with siblings routes 1`] = `
+Object {
+  "current": null,
+  "params": null,
+  "screens": Array [
+    Object {
+      "name": "home",
+      "path": "/",
+    },
+    Object {
+      "name": "login",
+      "path": "/login",
+    },
+    Object {
+      "name": "list",
+      "path": "/list",
+    },
+  ],
+}
+`;
