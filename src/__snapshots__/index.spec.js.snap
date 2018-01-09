@@ -32,6 +32,38 @@ Object {
 }
 `;
 
+exports[`k-mst-router should go to edit screen -with number param- 1`] = `
+Object {
+  "pushState": Array [
+    Array [
+      null,
+      "edit",
+      "/list/2",
+    ],
+  ],
+  "router": Object {
+    "current": "edit",
+    "params": Object {
+      "id": 2,
+    },
+    "screens": Array [
+      Object {
+        "name": "home",
+        "path": "/",
+      },
+      Object {
+        "name": "list",
+        "path": "/list",
+      },
+      Object {
+        "name": "edit",
+        "path": "/list/:id",
+      },
+    ],
+  },
+}
+`;
+
 exports[`k-mst-router should init with a simple router 1`] = `
 Object {
   "current": null,

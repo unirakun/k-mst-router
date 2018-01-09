@@ -11,7 +11,7 @@ const ScreenDefinition = types
 export default types
   .model({
     screens: types.array(ScreenDefinition),
-    params: types.maybe(types.map(types.string)),
+    params: types.maybe(types.map(types.union(types.string, types.number))),
     current: types.maybe(types.reference(ScreenDefinition)),
   })
   .named('Router')

@@ -1,6 +1,6 @@
 {
   "name": "k-mst-router",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "mobx-state-tree model router",
   "main": "index.js",
   "author": "Fabien JUIF <fabien.juif@gmail.com>",

@@ -104,7 +104,7 @@ var ScreenDefinition = mobxStateTree.types.model({
 
 var model = mobxStateTree.types.model({
   screens: mobxStateTree.types.array(ScreenDefinition),
-  params: mobxStateTree.types.maybe(mobxStateTree.types.map(mobxStateTree.types.string)),
+  params: mobxStateTree.types.maybe(mobxStateTree.types.map(mobxStateTree.types.union(mobxStateTree.types.string, mobxStateTree.types.number))),
   current: mobxStateTree.types.maybe(mobxStateTree.types.reference(ScreenDefinition))
 }).named('Router').actions(actions);
 // Views:
