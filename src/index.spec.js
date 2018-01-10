@@ -70,4 +70,15 @@ describe('k-mst-router', () => {
       pushState: window.history.pushState.mock.calls,
     }).toMatchSnapshot()
   })
+
+  it('should go to edit screen -with number param-', () => {
+    const router = create()
+
+    window.history.pushState = jest.fn()
+    router.go('edit', { id: 2 })
+    expect({
+      router: router.toJSON(),
+      pushState: window.history.pushState.mock.calls,
+    }).toMatchSnapshot()
+  })
 })
